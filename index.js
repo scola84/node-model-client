@@ -9,7 +9,7 @@ const Model = require('./lib/model');
 class Module extends DI.Module {
   configure() {
     this.inject(Dispatcher)
-      .insertArgument(1, this.singleton(Messenger));
+      .insertArgument(2, this.singleton(Messenger));
   }
 }
 
