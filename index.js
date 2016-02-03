@@ -2,9 +2,9 @@
 
 const DI = require('@scola/di');
 
+const Abstract = require('./lib/abstract');
 const Dispatcher = require('./lib/dispatcher');
 const Messenger = require('./lib/messenger');
-const Model = require('./lib/model');
 
 class Module extends DI.Module {
   configure() {
@@ -14,8 +14,8 @@ class Module extends DI.Module {
 }
 
 module.exports = {
+  Abstract,
   Dispatcher,
   Messenger,
-  Model,
   Module
 };
